@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+  min-width: 1200px;
+}
+.container .overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f4ff;
+  padding: 32px 0px;
+}
+.overview-inner {
+  width: 70%;
+  margin: 0 auto;
+}
+.title {
+  font-size: 200%;
+}
+.tips {
+  margin-top: 12px;
+  color: #626675;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+.images img {
+  width: 42px;
+  height: 288px;
+}
+.images .image-item {
+  flex-basis: 32%;
+  /* width: 0px; */
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.main-content {
+  width: 70%;
+  margin: 0 auto;
+}
+.main-content .item {
+  background-color: #fff;
+  border: solid 1px #e5e5e5;
+  box-shadow: 0 2px 3px -2px #d5d5d5;
+  padding: 32px 16px;
+}
+.overall-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.overall-statistic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+.overall-statistic-item {
+  padding-right: 8px;
+}
+.overall-statistic .name {
+  color: #519cea;
+  font-weight: 500;
+}
+.overall-statistic .num {
+  color: #888;
+}
+.overall-info .overall-info-image {
+  flex-basis: 25%;
+  flex-shrink: 0;
+  width: 0px;
+}
+.overall-info .overall-intro-text-item {
+  font-size: 14px;
+  line-height: 24px;
+  text-indent: 2em;
+}
+.overall-intro-table {
+  margin-top: 24px;
+}
+.overall-intro-table .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+.overall-intro-table .row-item {
+  display: flex;
+  flex-basis: 50%;
+}
+.row-item .name {
+  color: #333;
+  font-weight: bold;
+  flex-basis: 25%;
+}
+.row-item .data {
+  color: #747474;
+}
+.base {
+  margin-top: 12px;
+}
+.base .title-wrap {
+  border-left: 10px solid #003eb3;
+  margin: 0px -16px;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+}
+.main-content .line {
+  flex-grow: 1;
+  background: #eee;
+  height: 1px;
+  margin-left: 12px;
+}
+.content-wrapper {
+  margin-top: 24px;
+  padding: 0px 10px;
+}
+.content-wrapper .row {
+  display: flex;
+  font-size: 6px;
+  padding: 12px 0px;
+  border-bottom: 1px dotted #ccc;
+}
+.content-wrapper .row .col {
+  flex-basis: 50%;
+  display: flex;
+}
+.content-wrapper .row .col .name {
+  color: #999;
+  font-weight: bold;
+  width: 80px;
+  flex-basis: 15%;
+}
+.actor-info {
+  margin-top: 12px;
+}
+.actor-info .title-wrap {
+  border-left: 10px solid #003eb3;
+  margin: 0px -16px;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+.actor-list {
+  margin-top: 24px;
+  padding: 0px 10px;
+}
+.actor-item {
+  display: flex;
+  align-self: start;
+}
+.actor-item:not(:last-child) {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.actor-item img {
+  /* height: 147px; */
+  width: 135px;
+}
+.actor-desc {
+  margin-left: 16px;
+}
+.role-name {
+  color: #003eb3;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.actor-name {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.actor-name .label {
+  color: #999;
+}
+.role-detail {
+  font-size: 13px;
+  line-height: 1.3;
+}
