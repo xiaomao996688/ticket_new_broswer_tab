@@ -111,7 +111,6 @@ class Game {
     const mask = document.querySelector(".mask");
     this.select.addEventListener("change", (e) => {
       const value = this.random();
-      console.log(value, e.target.value);
       if (value == "0" || e.target.value == "0") {
         return;
       }
@@ -121,7 +120,6 @@ class Game {
       }
       this.showText(value, Number(e.target.value));
 
-      console.log(value, Number(e.target.value));
       this.operator(this.robot, value);
       this.operator(this.man, Number(e.target.value));
     });
@@ -130,8 +128,6 @@ class Game {
     });
   }
   operator(target, value) {
-    console.log(value, "value");
-    console.log(target, "target", value);
     switch (value) {
       case 1:
         target.img.src = "./assets/scissor.png";
@@ -186,9 +182,7 @@ class Game {
         this.data.man.fail += 1;
       }
     }
-    console.log(this.data, "ddd");
     if (this.data.total === 3) {
-      console.log("鼠鼠祟祟");
       if (this.data.robot.win === this.data.man.win) {
         this.title.innerText = `平局呀`;
       } else if (this.data.robot.win > this.data.man.win) {
@@ -208,4 +202,3 @@ class Game {
 // 弹窗
 
 const game = new Game();
-console.log(game, "game");
